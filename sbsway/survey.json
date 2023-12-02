@@ -1,0 +1,566 @@
+{
+ "title": "Sell Module",
+ "logoPosition": "right",
+ "pages": [
+  {
+   "name": "Landing Page",
+   "elements": [
+    {
+     "type": "dropdown",
+     "name": "Product type",
+     "title": "Select product type",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "console",
+       "text": "consoles"
+      },
+      {
+       "value": "cds",
+       "text": "Cds"
+      },
+      {
+       "value": "accessories",
+       "text": "Accessories"
+      }
+     ]
+    }
+   ],
+   "description": "Select product type that you want to sell"
+  },
+  {
+   "name": "Console  page brand",
+   "elements": [
+    {
+     "type": "dropdown",
+     "name": "Select Console brand",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "ps",
+       "text": "Playstation"
+      },
+      {
+       "value": "nintendo",
+       "text": "Nintendo"
+      },
+      {
+       "value": "xbox",
+       "text": "Xbox"
+      }
+     ]
+    }
+   ],
+   "visibleIf": "{Product type} = 'console'",
+   "title": "Console brand Page"
+  },
+  {
+   "name": "Playstation select page",
+   "elements": [
+    {
+     "type": "dropdown",
+     "name": "Select Playstation Model",
+     "title": "Select Playstation Model",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "ps3",
+       "text": "PS3"
+      },
+      {
+       "value": "ps4",
+       "text": "PS4"
+      },
+      {
+       "value": "ps5",
+       "text": "PS5"
+      }
+     ]
+    }
+   ],
+   "visibleIf": "{Select Console brand} = 'ps'",
+   "title": "select playstation model"
+  },
+  {
+   "name": "for playstation 3",
+   "elements": [
+    {
+     "type": "dropdown",
+     "name": "Variant Of PS3",
+     "title": "Variant Of PS3",
+     "choices": [
+      {
+       "value": "Item 1",
+       "text": "1tb"
+      },
+      {
+       "value": "Item 2",
+       "text": "2tb"
+      },
+      {
+       "value": "Item 3",
+       "text": "3tb"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "name": "Serial Number for ps3",
+     "isRequired": true
+    },
+    {
+     "type": "text",
+     "name": "Model number for ps3"
+    },
+    {
+     "type": "boolean",
+     "name": "Bluetooth On ps3",
+     "title": "Bluetooth On"
+    },
+    {
+     "type": "boolean",
+     "name": "CD drive working ps3",
+     "title": "CD drive working"
+    },
+    {
+     "type": "boolean",
+     "name": "USB/charging working?ps3",
+     "title": "USB/charging working?"
+    },
+    {
+     "type": "boolean",
+     "name": "HDMI output working?ps3",
+     "title": "HDMI output working?"
+    },
+    {
+     "type": "boolean",
+     "name": "LAN port working?ps3",
+     "title": "LAN port working?"
+    },
+    {
+     "type": "boolean",
+     "name": "wifi working? ps3",
+     "title": "wifi working? ",
+     "isRequired": true
+    },
+    {
+     "type": "tagbox",
+     "name": "Do you have following?ps3",
+     "title": "Do you have following?",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "Original Controller ps3",
+       "text": "Original Controller"
+      },
+      {
+       "value": "Original Adapter /charger ps3",
+       "text": "Original Adapter /charger"
+      },
+      {
+       "value": "BOX ps3",
+       "text": "BOX"
+      },
+      {
+       "value": "Bill ps3",
+       "text": "BILL"
+      }
+     ]
+    },
+    {
+     "type": "dropdown",
+     "name": "How does it looks? ps3",
+     "title": "How does it looks?",
+     "choices": [
+      {
+       "value": "Flawless ps3",
+       "text": "Flawless, Looks brand new! No imperfections"
+      },
+      {
+       "value": "Good ps3",
+       "text": "Good, Minor Scratches,Normasl signs of Usage, No dent or bent on corners "
+      },
+      {
+       "value": "Average ps3",
+       "text": "Average, Moderate to heavy Scratches, Wear dent and bent on corners"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "name": "Where did you buy from? ps3",
+     "title": "Where did you buy from?"
+    },
+    {
+     "type": "file",
+     "name": "Upload your Product Video ps3",
+     "title": "Upload your Product Video",
+     "description": "You can get a good estimate if you upload the video",
+     "maxSize": 24
+    }
+   ],
+   "visibleIf": "{Select Playstation Model} = 'ps3'",
+   "title": "for playstation 3"
+  },
+  {
+   "name": "For playstation 4",
+   "elements": [
+    {
+     "type": "dropdown",
+     "name": "Variant Of PS4",
+     "title": "Variant Of PS4",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "Item 1",
+       "text": "1tb"
+      },
+      {
+       "value": "Item 2",
+       "text": "2tb"
+      },
+      {
+       "value": "Item 3",
+       "text": "3tb"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "name": "Serial Number for ps4",
+     "isRequired": true
+    },
+    {
+     "type": "text",
+     "name": "Model Number for ps4",
+     "isRequired": true
+    },
+    {
+     "type": "boolean",
+     "name": "Bluetooth On ps4",
+     "title": "Bluetooth On",
+     "isRequired": true
+    },
+    {
+     "type": "boolean",
+     "name": "CD working ps4",
+     "title": "CD drive working"
+    },
+    {
+     "type": "boolean",
+     "name": "USB/charging working?ps4",
+     "title": "USB/charging working?"
+    },
+    {
+     "type": "boolean",
+     "name": "question1",
+     "title": "HDMI output working?"
+    },
+    {
+     "type": "boolean",
+     "name": "LAN port working?ps4",
+     "title": "LAN port working?"
+    },
+    {
+     "type": "boolean",
+     "name": "wifi working? ps4",
+     "title": "wifi working? ",
+     "isRequired": true
+    },
+    {
+     "type": "tagbox",
+     "name": "Do you have following?ps4",
+     "title": "Do you have following?",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "Original Controller ps4",
+       "text": "Original Controller"
+      },
+      {
+       "value": "Original Adapter /charger ps4",
+       "text": "Original Adapter /charger"
+      },
+      {
+       "value": "BOX ps4",
+       "text": "BOX"
+      },
+      {
+       "value": "Bill ps4",
+       "text": "BILL"
+      }
+     ]
+    },
+    {
+     "type": "dropdown",
+     "name": "How does it looks? ps4",
+     "title": "How does it looks?",
+     "choices": [
+      {
+       "value": "Flawless ps4",
+       "text": "Flawless, Looks brand new! No imperfections"
+      },
+      {
+       "value": "Good ps4",
+       "text": "Good, Minor Scratches,Normasl signs of Usage, No dent or bent on corners "
+      },
+      {
+       "value": "Average ps4",
+       "text": "Average, Moderate to heavy Scratches, Wear dent and bent on corners"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "name": "Where did you buy from?ps4",
+     "title": "Where did you buy from?",
+     "isRequired": true
+    },
+    {
+     "type": "file",
+     "name": "Upload your Product Video ps4",
+     "title": "Upload your Product Video",
+     "description": "You can get a good estimate if you upload the video",
+     "maxSize": 24
+    }
+   ],
+   "visibleIf": "{Select Playstation Model} = 'ps4'",
+   "title": "for playstation 4"
+  },
+  {
+   "name": "For playstation 5",
+   "elements": [
+    {
+     "type": "dropdown",
+     "name": "Variant Of PS5",
+     "title": "Variant Of PS5",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "Item 1",
+       "text": "1tb"
+      },
+      {
+       "value": "Item 2",
+       "text": "2tb"
+      },
+      {
+       "value": "Item 3",
+       "text": "3tb"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "name": "Serial Number for ps5",
+     "title": "Serial Number for ps5",
+     "isRequired": true
+    },
+    {
+     "type": "text",
+     "name": "Model number for ps5",
+     "title": "Model number for ps5",
+     "isRequired": true
+    },
+    {
+     "type": "boolean",
+     "name": "Bluetooth On ps5",
+     "title": "Bluetooth On",
+     "isRequired": true
+    },
+    {
+     "type": "boolean",
+     "name": "CD drive working ps5",
+     "title": "CD drive working"
+    },
+    {
+     "type": "boolean",
+     "name": "USB/charging working?ps5",
+     "title": "USB/charging working?"
+    },
+    {
+     "type": "boolean",
+     "name": "HDMI output working?ps5",
+     "title": "HDMI output working?"
+    },
+    {
+     "type": "boolean",
+     "name": "LAN port working?ps5",
+     "title": "LAN port working?"
+    },
+    {
+     "type": "boolean",
+     "name": "wifi working? ps5",
+     "title": "wifi working? ",
+     "isRequired": true
+    },
+    {
+     "type": "tagbox",
+     "name": "Do you have following?ps5",
+     "title": "Do you have following?",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "Original Controller ps5",
+       "text": "Original Controller"
+      },
+      {
+       "value": "Original Adapter /charger ps5",
+       "text": "Original Adapter /charger"
+      },
+      {
+       "value": "BOX ps5",
+       "text": "BOX"
+      },
+      {
+       "value": "Bill ps5",
+       "text": "BILL"
+      }
+     ]
+    },
+    {
+     "type": "dropdown",
+     "name": "How does it looks? ps5",
+     "title": "How does it looks?",
+     "choices": [
+      {
+       "value": "Flawless ps5",
+       "text": "Flawless, Looks brand new! No imperfections"
+      },
+      {
+       "value": "Good ps5",
+       "text": "Good, Minor Scratches,Normasl signs of Usage, No dent or bent on corners "
+      },
+      {
+       "value": "Average ps5",
+       "text": "Average, Moderate to heavy Scratches, Wear dent and bent on corners"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "name": "Where did you buy from? ps5",
+     "title": "Where did you buy from?",
+     "isRequired": true
+    },
+    {
+     "type": "file",
+     "name": "Upload your Product Video ps5",
+     "title": "Upload your Product Video",
+     "description": "You can get a good estimate if you upload the video",
+     "maxSize": 24
+    }
+   ],
+   "visibleIf": "{Select Playstation Model} = 'ps5'",
+   "title": "for playstation 5"
+  },
+  {
+   "name": "CD page",
+   "visibleIf": "{Product type} = 'cds'",
+   "title": "CD page"
+  },
+  {
+   "name": "Accessories Page",
+   "elements": [
+    {
+     "type": "dropdown",
+     "name": "Select Accessories you want to sell",
+     "choices": [
+      {
+       "value": "Controller acc",
+       "text": "Controller "
+      },
+      {
+       "value": "Headset acc",
+       "text": "Headset"
+      },
+      {
+       "value": "Move Controller acc",
+       "text": "Move Controller"
+      }
+     ]
+    }
+   ],
+   "visibleIf": "{Product type} = 'accessories'",
+   "title": "Acccessories Page"
+  },
+  {
+   "name": "Controller Page",
+   "elements": [
+    {
+     "type": "dropdown",
+     "name": "controller brand page",
+     "title": "Select Brand of your controller",
+     "choices": [
+      {
+       "value": "Move controller brand ",
+       "text": "Sony Move controller for ps4 ps3"
+      },
+      {
+       "value": "x-box controller , controller brand page",
+       "text": "x box controller"
+      },
+      {
+       "value": " controller, controlller brand page",
+       "text": "Sony Controller"
+      }
+     ]
+    }
+   ],
+   "visibleIf": "{Select Accessories you want to sell} = 'Controller acc'",
+   "title": "controller brand Page"
+  },
+  {
+   "name": "Sony Controller Page",
+   "elements": [
+    {
+     "type": "dropdown",
+     "name": "Select specific controller",
+     "title": "Select specific controller",
+     "choices": [
+      {
+       "value": "PS3 sony controller",
+       "text": "PS3"
+      },
+      {
+       "value": "PS4 sony controller",
+       "text": "PS4"
+      },
+      {
+       "value": "PS5 sony controller",
+       "text": "PS5"
+      }
+     ]
+    },
+    {
+     "type": "boolean",
+     "name": "Bluetooth Working?",
+     "title": "Bluetooth Working?"
+    },
+    {
+     "type": "boolean",
+     "name": "Wires are good?",
+     "title": "Wires are good?"
+    },
+    {
+     "type": "boolean",
+     "name": "Buttons Working?",
+     "title": "Buttons Working?"
+    },
+    {
+     "type": "boolean",
+     "name": "question2",
+     "title": "Do you have the box?"
+    }
+   ],
+   "visibleIf": "{controller brand page} = ' controller, controlller brand page'",
+   "title": "Sony controller"
+  }
+ ],
+ "calculatedValues": [
+  {
+   "name": "var1"
+  }
+ ],
+ "showPageTitles": false
+}
